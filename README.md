@@ -64,6 +64,8 @@ msiexec.exe /i "npp.7.8.1.Installer.x64.exe" /auto
   ### `jre-8.bat`
   Установка Java Runtime Environment с использованием конфигурационного файла
   ```shell
-  C:\>jre-8u241-windows-x64.exe INSTALLCFG="%cd%jre-8_configuration.txt" /L "%cd%jre-log.txt"`
+  "jre-8u241-windows-x64.exe" INSTALLCFG="%cd%jre-8_configuration.txt" /L "%cd%jre-log.txt"
   ```
-  - `/L "%cd%jre-log.txt"` - создание лог-файла с результатами установки 
+  - `/L "%cd%jre-log.txt"` - создание лог-файла с результатами установки
+  - `INSTALLCFG="%cd%jre-8_configuration.txt"` - установка с использованием конфигурационного файла
+  - `%cd` - возврат рабочей директории
